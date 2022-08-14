@@ -1,0 +1,282 @@
+/* style.css */
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+ul { list-style-type: none; }
+a { text-decoration: none;}
+
+/* 마포금빛나루 웹폰트 */
+@font-face {
+  font-family: 'MapoGoldenPier';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #505050;
+  text-align: center;
+  font-family: 'MapoGoldenPier';
+}
+
+
+h1.title {
+  font-family: 'Parisienne', cursive;
+  font-size: 45px;
+  padding: 30px 0;
+}
+
+p { line-height: 1.5em; }
+
+a > .icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 4px;
+  /* color: #505050; */
+  /* fill: #505050; */
+ }
+
+ #gallery, #video {
+  margin-bottom: 100px;
+}
+ 
+ #main {
+  width: 100%;
+  /* 뷰포트높이 100% */
+  height: 100vh;
+  /* 이미지 최소 규격 750 x 1334 */
+  background-image: url(images/main_img.jpg);
+  background-size: contain;
+  /* background-size: cover; */
+  background-position: center;
+  background-position-y: 90px;
+  background-repeat: no-repeat;
+  position: relative;
+  /* outline: 1px solid red; */
+
+ }
+
+ #main > .main_text {
+   position: absolute;
+   bottom : 0px;
+   height: 30vh;
+   background: #fff;
+   width: 100%;
+   padding: 30px 0;
+ }
+
+ #main > #text_wedding {
+  font-family: 'Parisienne', cursive;
+  font-size: 90px;
+  color: rgb(235, 155, 168);
+  text-shadow: 3px 3px 0 rgb(230, 230, 230);
+  transform: rotate(-20deg);
+  padding-top: 30px;
+  width: 90%;
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  /* margin-left: 8px; */
+ }
+
+ #main > .main_text > .name {
+   padding: 20px 0;
+ }
+
+
+ /* 초대의 말 */
+ #invitation {
+   background: #ffeded;
+   /* background-image: radial-gradient( circle farthest-corner at 17% 6.5%,  rgba(255,255,255,1) 0%, rgba(255,237,237,1) 90% ); */
+   padding-bottom: 50px;
+   /* outline: 1px solid green; */
+ }
+
+ #invitation p {
+   font-size: 14px;
+   line-height: 1.8em;
+ }
+
+/* 연락하기 */
+
+
+#call  p {
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+
+#call > #bridegroom {
+  padding: 20px 0;
+  overflow: hidden;
+}
+#call .groom {
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#call .bride {
+  float: right;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+#call h3#call_parents {
+  background: #ffeded;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+#call > #parents {
+  overflow: hidden;
+}
+
+#call > #parents > div {
+  width: 50%;
+  margin: 20px 0;
+}
+
+#call > #parents span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #bababa;
+}
+
+
+#call > #parents > .groom_parents {
+  float: left;
+  border-right: 1px solid #ededed;
+}
+
+#call > #parents > .bride_parents {
+  float: right;
+}
+
+#call h6 {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+#call .groom_parents > h6 {
+  color: lightseagreen;
+}
+
+#call .bride_parents > h6 {
+  color: rgb(235, 155, 168);
+}
+
+#call > #parents > div > div {
+  padding-bottom: 10px;
+}
+
+#call .icon {
+  margin-bottom: 10px;
+}
+
+/* 갤러리 */
+#gallery {
+  background: #ffeded;
+}
+
+#gallery p {
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+#gallery > .thumbnail_img {
+  /* outline: 1px solid red; */
+  overflow: hidden;
+  
+}
+
+#gallery > #big_img {
+  width: 100%;
+  display: block;
+}
+
+#gallery > .thumbnail_img img {
+  float: left;
+  width: 25%;
+  width: calc(100% / 6);
+}
+
+
+
+
+ /* 오시는 길 */
+ #location {
+   overflow: hidden;
+ }
+
+ #location > iframe {
+   float: left;
+ }
+
+ #location > .address {
+   overflow: hidden;
+   padding: 30px 20px;
+   background: #ffeded;
+ }
+
+
+ #location > .address > p {
+   text-align: left;
+   float: left;
+ }
+
+ #location > .address > a {
+  float: right;
+  position: relative;
+  top: 9px;
+}
+
+#location > .address > a > img {
+  width: 30px;
+  height: 30px;
+ }
+
+#location > .map_icons {
+  padding: 30px 0;
+}
+
+#location > .map_icons > a {
+ display: inline-block;
+ margin: 0 30px;
+ font-size: 12px;
+}
+
+#location > .map_icons > a > img {
+  width: 40px;
+  height: 40px;
+}
+
+.map_icons p {
+  color: #505050;
+}
+
+#location > .location_info {
+   text-align: left;
+   padding: 0 20px;
+   margin-bottom: 80px;
+}
+
+#location > .location_info  b {
+   line-height: 2em;
+}
+
+#location > .location_info  p {
+   color: #969696;
+}
+
+#location > .location_info > div {
+   padding-top: 30px;
+   padding-bottom: 30px;
+   border-top: 1px solid rgba(0,0,0,0.1);
+}
